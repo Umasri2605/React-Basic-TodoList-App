@@ -26,8 +26,8 @@ function TodoList(){
             if(index!==i){
                 return true;
             }
-        })
-    })
+        });
+    });
     }  
     
     //ui

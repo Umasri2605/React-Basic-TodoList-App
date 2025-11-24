@@ -34,14 +34,14 @@ function TodoList(){
     return(
         <div>
             <input type="text" id="ntd"/>
-            <button onClick={()=>add()}>Add Task</button>
+            <button onClick={()=>add()} className="btn btn-success bg-success-subtle text-dark">Add Task</button>
             <ul>
                 <br></br>
                 {
                   todo.map((todos,i)=>{
-                    return<li>
+                    return<li className="list-unstyled">
                         {todos}
-                        <button onClick={()=>{del(i)}}>Delete</button>
+                        <button onClick={()=>{del(i)}} className="btn btn-danger-subtle ms-2 bg-danger-subtle">Delete</button>
                     </li>
                   })
                 }

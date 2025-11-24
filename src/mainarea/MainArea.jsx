@@ -41,7 +41,7 @@ function TodoList(){
                   todo.map((todos,i)=>{
                     return<li className="list-unstyled">
                         {todos}
-                        <button onClick={()=>{del(i)}} className="btn btn-danger-subtle ms-2 bg-danger-subtle">Delete</button>
+                        <button onClick={()=>{del(i)}} className="btn btn-danger-subtle m-2 bg-danger-subtle">Delete</button>
                     </li>
                   })
                 }
